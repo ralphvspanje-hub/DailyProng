@@ -1,8 +1,8 @@
-# Powerhouse System — Onboarding & Recalibration
+# DailyProng — Onboarding & Recalibration
 
 ## What This File Is
 
-This file contains the complete instructions for the Powerhouse System's onboarding conversation (first-time setup) and recalibration flow (updating an existing setup). It is **self-contained** — everything needed to run the discovery conversation, generate outputs, handle the review loop, and write the results to `memory.md` lives here.
+This file contains the complete instructions for the DailyProng System's onboarding conversation (first-time setup) and recalibration flow (updating an existing setup). It is **self-contained** — everything needed to run the discovery conversation, generate outputs, handle the review loop, and write the results to `memory.md` lives here.
 
 **When this file gets loaded:** `CLAUDE.md` reads this file when it detects one of two conditions:
 1. The user has not yet been onboarded (`memory.md` says "Not yet onboarded")
@@ -186,7 +186,7 @@ After presenting all three outputs, ask these four review questions. Ask them to
 Once the user confirms, write the complete `memory.md` file using this exact structure. Replace the existing content entirely.
 
 ```markdown
-# Powerhouse System — Memory
+# DailyProng System — Memory
 
 ## Onboarding Summary
 - Onboarded: [today's date, YYYY-MM-DD]
@@ -276,7 +276,7 @@ Once the user confirms, write the complete `memory.md` file using this exact str
 
 End the session with this message (or a natural variation):
 
-> "Your Powerhouse system is set up. Come back in a new context window and I'll generate your first learning section."
+> "Your DailyProng system is set up. Come back in a new context window and I'll generate your first learning section."
 
 **CRITICAL:** Do NOT generate a learning unit in this session. The onboarding conversation uses significant context window space — generating a unit in the same session risks degraded quality. The first unit comes in a fresh session.
 
